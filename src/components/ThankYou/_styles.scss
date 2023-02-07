@@ -1,0 +1,35 @@
+@import '../../assets/scss/modules/variables';
+@import '../../assets/scss/modules/mixins';
+@import '../../assets/scss/modules/classes';
+
+.thank-you-container {
+  row-gap: 40px;
+  padding-top: 10px;
+  @include flex-property(inherit, center);
+  flex-direction: column;
+
+  .selected {
+    width: 185px;
+    height: 30px;
+    background-color: $mediumGrey;
+    border-radius: 15px;
+    @include flex-property(center, center);
+
+    span {
+      @include text-property(15px, $regular, $orange, none);
+      @include flex-property(center, center);
+    }
+  }
+
+  article {
+    h3 {
+      @extend %white-title;
+      text-align: center;
+    }
+
+    p {
+      @extend %paragraph-props;
+      text-align: center;
+    }
+  }
+}

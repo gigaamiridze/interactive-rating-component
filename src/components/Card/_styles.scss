@@ -1,0 +1,10 @@
+@import '../../assets/scss/modules/variables';
+@import '../../assets/scss/modules/mixins';
+
+.card {
+  width: 400px;
+  height: 400px;
+  background-color: $darkBlue;
+  border-radius: 30px;
+  padding: 28px;
+}

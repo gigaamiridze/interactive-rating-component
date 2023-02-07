@@ -1,0 +1,62 @@
+@import '../../assets/scss/modules/variables';
+@import '../../assets/scss/modules/mixins';
+@import '../../assets/scss/modules/classes';
+
+.rating-container {
+  height: 100%;
+  @include flex-property(space-between, inherit);
+  flex-direction: column;
+
+  .icon-box {
+    @extend %round-box;
+  }
+
+  article {
+    h3 {
+      @extend %white-title;
+    }
+
+    p {
+      @extend %paragraph-props;
+    }
+  }
+
+  .rating {
+    @include flex-property(space-between, center);
+
+    div {
+      @extend %round-box;
+      cursor: pointer;
+      @include text-property(17px, $medium, $lightGrey, none);
+      @include transition(all, 0.2s, ease-in-out);
+
+      &.active {
+        background-color: $lightGrey;
+        color: $white;
+      }
+
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    background-color: $orange;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    @include text-property(13px, $semiBold, $white, uppercase);
+    letter-spacing: 2px;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &:focus {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+}

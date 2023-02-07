@@ -1,0 +1,19 @@
+%round-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $mediumGrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%white-title {
+  @include text-property(26px, $semiBold, $white, none);
+  margin-bottom: 10px;
+}
+
+%paragraph-props {
+  @include text-property(15px, $medium, $lightGrey, none);
+  line-height: 23px;
+}

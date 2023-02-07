@@ -1,0 +1,12 @@
+// Importing font
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Overpass:wght@300;400;500;600;700&display=swap');
+
+// Importing scss files
+@import './base/reset';
+@import './modules/variables';
+@import './modules/mixins';
+@import './modules/classes';
+@import './main/general';
+@import '../../components/Card/styles';
+@import '../../components/Rating/styles';
+@import '../../components/ThankYou/styles';

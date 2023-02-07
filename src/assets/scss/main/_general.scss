@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+  font-family: $overpass;
+
+  #root {
+    height: 100%;
+
+    .App {
+      height: 100%;
+      background-color: $veryDarkBlue;
+      @include flex-property(center, center);
+    }
+  }
+}
